@@ -1,0 +1,104 @@
+:root{
+    --background-color:skyblue;
+    --accent-color:yellow;
+    --content-bg-color:blue;
+    --header-font-color:black;
+    --content-font-color:white;
+    --radius:100px;
+}
+
+*,::after,::before{
+    box-sizing: border-box;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--background-color);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 100px;
+    color: var(--content-font-color);
+    padding: 10px 100px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header{
+    text-shadow: 0px 0px 20px var(--accent-color), 0px 0px 40px var(--accent-color);
+    color: var(--header-font-color);
+    padding: 50px;
+    text-align: center;
+    font-size: 100px;
+}
+
+h2{
+ padding-bottom: 40px;
+}
+
+section{
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px var(--content-bg-color), 0px 0px 40px var(--content-bg-color);
+    text-align: left;
+    padding: 20px;
+    padding-inline: 100px;
+}
+
+section.one{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    column-gap: 100px;
+    
+}
+
+section.five{
+    background-color: var(--accent-color);
+    box-shadow: 0px 0px 20px var(--accent-color), 0px 0px 40px var(--accent-color);
+}
+
+section.two,section.four,section>h2{
+    background-color: transparent;
+    box-shadow: none;
+}
+
+section.two>div,section.four>div{
+    display: flex;
+    flex-wrap:nowrap;
+    gap: 50px;
+    flex-grow: 8 2;
+}
+
+section,h2{
+    background-color: var(--content-bg-color);
+    color: var(--content-font-color);
+}
+
+.circle,input[type=button],img{
+    background-color: var(--accent-color);
+    border: 4px outset var(--accent-color);
+    border-radius: var(--radius);
+    box-shadow: 0px 0px 20px var(--accent-color), 0px 0px 40px var(--accent-color);
+    height:var(--radius);
+    width: var(--radius);
+    place-content: center;
+}
+
+section.one>div.img,section.one>div.img>img{
+    height:calc(var(--radius)*2);
+    width: calc(var(--radius)*2);
+    border-radius: calc(var(--radius)*2);
+}
+
+section.five>*{
+    color: var(--header-font-color);
+
+}
+
+footer{
+    background-color: var(--content-bg-color);
+    padding-top: 100px;
+    padding-bottom: 20px;
+    text-align: center;
+}
