@@ -3,67 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+    <!--<link rel="stylesheet" href="styles/style.css">-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Document</title>
 </head>
-<body>
-    <Header>Nixon Nelson</Header>
-    <section class="one">
-        <div>
-            <h2>About Me</h2>
-            <p>Curious tinkerer with a particular interest in embedded devices and Linux.<br/> 
-                Loves creating digital art and is currently working on projects like autonomous rover and “F1 racer” a pixel art style racer game being built using C#.<br/> Has a habit of
-                making projects and improving or adding to them, learning new things and experimenting with available knowledge, and
-                takes an interest in aesthetics and function.<br/> Has a keen eye towards details and receives satisfaction in structure.
-            </p>
-        </div>
-        <div class="circle img">
-            <img src="images/20210221_115653.jpg" alt="profilePic">
-        </div>
-        
-    </section>
-    <section class="two">
-        <h2>Projects</h2>
-        <div>
-            <div class="circle"><input type="button" value=""></div>
-            <div class="circle"><input type="button" value=""></div>
-            <div class="circle"><input type="button" value=""></div>
-        </div>
-    </section>
-    <section class="three">
-        <h2>Skills</h2>
-        <p>
-            Programming languages: Proficient - C, PowerShell, Java SE, Html5, JS, CSS3; Intermediate - C++, Processing, C#, bash.<br/>
-								Frameworks: React JS, Java Fx.<br/>
-								Technologies: Docker, LXD, Linux - Debian, Arch.<br/>
-								Software: Unity, Adobe Illustrator, Autodesk 360, Krita, Gimp<br/>
-								Embedded systems: MSP430, Esp8266, Atmega328p.<br/>
-        </p>
-    </section>
-    <section class="four">
-        <h2>Jobs</h2>
-        <div>
-            <div class="circle"><input type="button" value=""></div>
-            <div class="circle"><input type="button" value=""></div>
-        </div>
-        
-    </section>
-    <section class="five">
-        <h2>
-            Wassup 
-        </h2>
-        <p>
-            I am working on the 2 games  using pixel art, and completeing "Jordan B petersons, Beyond order 12 more rules for life" 
-            and searching for opportunities in the game developement
+<body class="w3-blue w3-monospace">
+	<Header class=" w3-display-top w3-container w3-padding w3-margin w3-orange w3-center w3-jumbo">Nixon Nelson</Header>
+	<div class="w3-cell-row w3-container">
+		<article class="w3-container w3-cell">
+			<section class="w3-panel">
+				<div class="w3-card-4 w3-padding w3-margin w3-indigo w3-round-large">
+					<h2>About Me</h2>
+					<p>Curious tinkerer with a particular interest in embedded devices and Linux.<br/>
+					Loves creating digital art and is currently working on projects like autonomous rover and “F1 racer” a pixel art style racer game being built using C#.<br/>
+					Has a habit of making projects and improving or adding to them, learning new things and experimenting with available knowledge, and takes an interest in aesthetics and function.<br/> Has a keen eye towards details and receives satisfaction in structure.
+					</p>
+				</div>
 
-        </p>
-    </section>
-    <footer>
-        <p>
-            Made using Html5 and CSS3</br>
-            Made by Nixon Nelson Paliakkara
-        </p>
-        
-    </footer>
+			</section>
+			<section class="w3-panel">
+				<div class="w3-padding w3-margin w3-round-large">
+					<h2>Projects</h2>
+					<div class="w3-bar" >
+						<div class="w3-bar-item">
+							<img class=" w3-button w3-circle w3-orange w3-padding w3-margin w3-hover-indigo" onclick="show('pro1')" onmouseout="hide('pro1')" src="#" alt="something">
+							<img class=" w3-button w3-circle w3-orange w3-padding w3-margin w3-hover-indigo" onclick="show('pro2')" onmouseout="hide('pro2')" src="#" alt="something">
+							<img class=" w3-button w3-circle w3-orange w3-padding w3-margin w3-hover-indigo" onclick="show('pro3')" onmouseout="hide('pro3')" src="#" alt="something">
+							<img class=" w3-button w3-circle w3-orange w3-padding w3-margin w3-hover-indigo" onclick="show('pro4')" onmouseout="hide('pro4')" src="#" alt="something">
+						</div>
+					</div>
+					<div id="pro1" class="w3-container accr style="display:none">
+						<p>project1 details</p>
+					</div>
+					<div id="pro2" class="w3-container accr style="display:none">
+						<p>project2 details</p>
+					</div>
+					<div id="pro3" class="w3-container accr style="display:none">
+						<p>project3 details</p>
+					</div>
+					<div id="pro4" class="w3-container accr style="display:none">
+						<p>project4 details</p>
+					</div>
+				</div>
+			</section>
+			<section class="w3-panel">
+				<div class="w3-card-4 w3-padding w3-margin w3-indigo w3-round-large">
+					<h2>Skills</h2>
+					<p>
+					Programming languages: Proficient - C, PowerShell, Java SE, Html5, JS, CSS3; Intermediate - C++, Processing, C#, bash.<br/>
+					Frameworks: React JS, Java Fx.<br/>
+					Technologies: Docker, LXD, Linux - Debian, Arch.<br/>
+					Software: Unity, Adobe Illustrator, Autodesk 360, Krita, Gimp<br/>
+					Embedded systems: MSP430, Esp8266, Atmega328p.<br/>
+					</p>
+				</div>
+			</section>
+			<section class="w3-panel">
+				<div class="w3-padding w3-margin w3-round-large">
+				<h2>Jobs</h2>
+				<div class="w3-bar" >
+					<div class="w3-bar-item">
+						<img class=" w3-button w3-circle w3-orange w3-padding w3-margin w3-hover-indigo" onclick="show('job1')" onmouseout="hide('job1')" src="#" alt="something">
+						<img class=" w3-button w3-circle w3-orange w3-padding w3-margin w3-hover-indigo" onclick="show('job2')" onmouseout="hide('job2')" src="#" alt="something">
+						<img class=" w3-button w3-circle w3-orange w3-padding w3-margin w3-hover-indigo" onclick="show('job3')" onmouseout="hide('job3')" src="#" alt="something">
+						<img class=" w3-button w3-circle w3-orange w3-padding w3-margin w3-hover-indigo" onclick="show('job4')" onmouseout="hide('job4')" src="#" alt="something">
+					</div>
+				</div>
+				<div id="job1" class="w3-container accr style="display:none">
+					<p>project1 details</p>
+				</div>
+				<div id="job2" class="w3-container accr style="display:none">
+					<p>project2 details</p>
+				</div>
+				<div id="job3" class="w3-container accr style="display:none">
+					<p>project3 details</p>
+				</div>
+				<div id="job4" class="w3-container accr style="display:none">
+					<p>project4 details</p>
+				</div>
+			</section>
+			<section class="w3-panel">
+				<div class="w3-card-4 w3-padding w3-margin w3-orange w3-round-large">
+					<h2>
+						Wassup
+					</h2>
+					<p>
+					I am working on the 2 games  using pixel art, and completing "Jordan B petersons, Beyond order 12 more rules for life"
+					and searching for opportunities in the game development
+
+					</p>
+				</div>
+			</section>
+		</article>
+		<aside class="w3-container w3-cell">
+				<img style="border:10px solid; width:100%"  class="w3-border-orange w3-round-large w3-image" src="images/20210221_115653.jpg" alt="profilePic">
+		</aside>
+	</div>
+	<footer class="w3-container w3-indigo">
+		<div class="w3-padding w3-margin w3-round-large w3-orange">
+			<p>
+			Made using Html5 and CSS3
+			</br>
+			Made by Nixon Nelson Paliakkara
+			</p>
+		</div>
+	</footer>
+<script>
+function show(id) {
+	var i;
+	var x = document.getElementsByClassName("accr");
+	var p = document.getElementById(id);
+	for(i = 0; i < x.length; i++){
+		x[i].style.display = "none";
+	}
+	p.style.display = "block";
+}
+function hide(id) {
+	document.getElementById(id).style.display="none";
+}
+</script>
 </body>
 </html>
